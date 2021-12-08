@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emi-Calculator</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h3 style="text-align: center; font-weight: bold;">EMI calculator</h3>
+            <p style="border-bottom: 2px solid rgb(248, 162, 162,0.5);"></p>
+            <br>
+            <label for="amount">Loan-Amount</label>
+             <button><i class="fas fa-dollar-sign"></i></button><input id="amount" type="number" min="1" max="1000000" onchange="computeLoan()">
+            <br>
+            <label for="vyaaj">Interest-rate</label>
+            <button><i class="fa fa-percent" aria-hidden="true"></i></button><input id="interest_rate" type="number" min="0" max="100" value="10" step=".1"
+                    onchange="computeLoan()">
+             <br>
+             <label for="days">month</label>
+
+             <input id="months" type="number" min="1" max="72" value="1" step="1" onchange="computeLoan()">
+            
+            <h2 id="payment"></h2>
+</div>
+</div>
+
+
+            <script src="main.js"></script>
+</body>
+
+</html>
